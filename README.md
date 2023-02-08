@@ -6,7 +6,7 @@ A simple class that can be used to fake Selenium Browser Geolocation
 
 Its very easy to get started with using fakerlocationer. A simple example is shown in usage.py or you can see it below:
 
-'''
+```python
 from fakerlocationer import FakerLocationer
 from selenium import webdriver
 
@@ -14,7 +14,7 @@ driver = webdriver.Chrome()
 driver.get("http://www.mylocation.org")
 f = FakerLocationer(driver)
 f.setLocation(50, 50)
-'''python
+```
 
 The only drawbacks of fakerlocationer are that in order for the geolocation to change the page must be fully loaded, and if the page refreshes/changes it'll reset the geolocation
 
@@ -26,9 +26,9 @@ Pretty much only need Selenium and Python 3
 
 Can be installed by using pip:
 
-'''
+```shell
 pip3 install fakerlocationer
-'''
+```
 
 Or just by literally downloading fakerlocationer.py and importing it into your project
 
